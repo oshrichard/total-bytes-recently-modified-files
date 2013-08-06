@@ -18,5 +18,8 @@ done;
 # convert bytes to MBs
 mbCount=`echo ${byteCount} | awk '{ foo = $1 / 1024 / 1024 ; print foo "MB" }'`
 
+# Output the KB's
+echo "Total B's: ${byteCount}"
+
 # Output the MB's
 echo "Total MB's: ${mbCount}"
