@@ -9,9 +9,13 @@ files=`find ${path} -mtime -${days} -type f`
 # Set variable
 byteCount=0;
 
+# loop all files that match the find criteria
 for file in ${files[*]};
 do
+		# Get bytes from this file
 		bytes=`du -b ${file} | awk '{print $1}'`;
+
+		# add bytes from this file to byteCount
 		let "byteCount=${byteCount} + ${bytes}";
 done;
 
