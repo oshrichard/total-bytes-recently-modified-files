@@ -18,7 +18,7 @@ done;
 # convert bytes to MBs
 echo ${byteCount}
 
-mbCount = ${byteCount} / 1024 / 1024
+mbCount=${byteCount} / 1024 / 1024
 
 
 # Output the MB's
