@@ -11,7 +11,8 @@ byteCount=0;
 
 for file in ${files[*]};
 do
-		bytes=`du ${file} | awk '{print $1}'`;
+		bytes=`du -b ${file} | awk '{print $1}'`;
 		let "byteCount=${byteCount} + ${bytes}";
 done;
 
+echo ${byteCount}
