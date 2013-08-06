@@ -15,4 +15,7 @@ do
 		let "byteCount=${byteCount} + ${bytes}";
 done;
 
-echo ${byteCount}
+
+mbCount=`echo ${byteCount} | awk '{ foo = $1 / 1024 / 1024 ; print foo "MB" }'
+
+echo ${mbCount}
