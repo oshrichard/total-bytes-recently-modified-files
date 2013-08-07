@@ -5,7 +5,7 @@ A simple bash script to show the total bytes used by the recently modified files
 
 #USAGE
 
-/path/to/script/total-recent-files.sh /path/of/dir days
+	/path/to/script/total-recent-files.sh /path/of/dir days
 
 #Examples
 
